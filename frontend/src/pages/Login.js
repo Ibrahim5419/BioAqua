@@ -25,7 +25,7 @@ function Login() {
       return handleError("email and password are required");
     }
     try {
-      const url = `${process.env.REACT_APP_API_URL}/auth/login`;
+      const url = `https://bio-aqua-api.vercel.app/auth/login`;
       const response = await fetch(url, {
         method: "POST",
         headers: {
