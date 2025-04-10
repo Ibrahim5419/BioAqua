@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  #hero {
+    padding: 0px;
+    background-color: red;
+    color: yellow;
+  }
+}
