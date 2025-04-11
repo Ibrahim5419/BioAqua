@@ -1,7 +1,13 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/auth")
+    .connect(
+    "mongodb+srv://phatanibrahim71685:yaZtR3iEzTR2oQaB@mernauth.otolc87.mongodb.net/?retryWrites=true&w=majority&appName=mernauth",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("MongoDB Connected...");
   })
